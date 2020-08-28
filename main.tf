@@ -4,6 +4,8 @@ provider "azurerm" {
   client_id       = var.azure-client-id
   client_secret   = var.azure-client-secret 
   tenant_id       = var.azure-tenant-id
+  version = "=2.5.0"
+  features {}
 }
 resource "azurerm_resource_group" "shane" {
   name     = "shane"
